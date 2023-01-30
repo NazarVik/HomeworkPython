@@ -5,3 +5,19 @@
 # каждое. Здесь каждое число – это масса соответствующего арбуза
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
+
+n = int(input("введите кол-во арбузов = "))
+list = []
+for i in range(n):
+     list.append(int(input("введите массу арбуза = ")))
+
+min = list[0]
+max = list[0]
+
+for i in list:
+    if i > max:
+        max = i
+    if i < min:
+        min = i
+
+print(min, max)
