@@ -10,15 +10,7 @@ for i in range(n):
     list.append(int(input()))
 
 x = int(input("введите искомое число = "))
-maxElement = max(list)
-minElement = min(list)
 
-if minElement <= x <= maxElement:
-    listDif = [abs(x - i) for i in list]
-    resultIndex = listDif.index(min(listDif))
-    print(list[resultIndex])
-else:
-    print((minElement, maxElement)[x > maxElement])
-
-
-
+listDif = [abs(x - i) for i in list]
+resultIndex = listDif.index(min(listDif))
+print(list[resultIndex])
