@@ -8,7 +8,7 @@ print("введите ", n, " целых чисел")
 for i in range(n):
     list.append(int(input()))
 count = 0
-x = list[-1]
+x = int(input("введите искомое число = "))
 for i in list:
     if x == i:
         count += 1
