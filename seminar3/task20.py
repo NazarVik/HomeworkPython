@@ -21,10 +21,10 @@ dict = \
      }
 str = input("введите слово = ").upper()
 scores = 0
-for i in str:
-  for k, j in dict.items():
-   if i in j:
-    scores += k
+for ch in str:
+  for key, val in dict.items():
+   if ch in val:
+    scores += key
     break
 
 print(scores)
