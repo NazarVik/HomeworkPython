@@ -10,7 +10,7 @@
 # собрать за один заход собирающий модуль, находясь перед некоторым кустом
 # заданной во входном файле грядки.
 
-list1 = []
+
 with open("input.txt", "r") as f:
     n = int(f.readline())
     list1 = list(map(int, f.readline().split()))
@@ -23,9 +23,3 @@ for i in range(n):
 
 with open("output.txt", "w") as f:
     f.write(str(max1))
-
-
-
-
-
-
