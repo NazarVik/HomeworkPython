@@ -6,7 +6,7 @@
 # все пары дружественных чисел, каждое из которых не превосходит k. Пары необходимо выводить по одной в строке,
 # разделяя пробелами. Каждая пара должна быть выведена только один раз (перестановка чисел новую пару не дает).
 
-def divisor_search(num):
+def divisorSearch(num):
     list1 = []
     for i in range(1, num):
         if num % i == 0:
@@ -17,8 +17,8 @@ def divisor_search(num):
 k = int(input("enter k < 10^5 :  "))
 setDiv = set()
 for i in range(1, k):
-    sum_div_i = divisor_search(i)
-    if divisor_search(sum_div_i) == i and sum_div_i < k and sum_div_i != i:
+    sumDiv = divisorSearch(i)
+    if divisorSearch(sumDiv) == i and sumDiv < k and sumDiv != i:
         setDiv.add(i)
-        setDiv.add(sum_div_i)
+        setDiv.add(sumDiv)
 print(*sorted(list(setDiv)))
