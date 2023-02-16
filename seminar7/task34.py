@@ -6,20 +6,15 @@
 # если с ритмом все в порядке и “Пам парам”, если с ритмом все не в порядке
 
 example_string = "аяуюоеёэиы"
-#
-list_str = "пара-ра-рам- рам-пам-папам па-ра-па-дам".split()
-print(list_str)
+list_str = "пара-ра-рам-па рам-пам-папам па-ра-па-м".split()
 list_len = []
 
-for i in list_str:
-    list_vowels = [j for j in i if j in example_string]
+for one_str in list_str:
+    # list_vowels = [vowels for vowels in one_str if vowels in example_string]  # [a,a,a,a]
+    list_vowels = list(filter(lambda x: x in example_string, one_str))
     list_len.append(len(list_vowels))
 
-print(list_len)
 print("Парам пам-пам" if len(set(list_len)) == 1 else "Пам парам")
 
-# for j in i:
-#     if j in example_string:
-#         sum_vowels += 1
 
 
