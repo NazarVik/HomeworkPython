@@ -11,7 +11,7 @@
 # может ввести имя или фамилию, и Вы должны реализовать функционал для изменения и удаления данных.
 
 def input_data():
-    with open("data1.txt", "a") as f:
+    with open("data.txt", "a") as f:
         for i in range(int(input("введите кол-во новых записей в справочник - "))):
             f.write(input("введите ФИО и номер телефона: ").upper())
             f.write("\n")
