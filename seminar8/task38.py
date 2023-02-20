@@ -43,6 +43,7 @@ def reload_data():
             if search_data in list_feature:
                 new_str = i.replace(search_data, change_data)
                 print(new_str)
+                f.write(new_str)
 
 
 
