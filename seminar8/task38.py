@@ -13,7 +13,7 @@
 def input_data():
     with open("data.txt", "a") as f:
         for i in range(int(input("введите кол-во новых записей в справочник - "))):
-            f.write(input("введите ФИО и номер телефона: " + "\n").upper())
+            f.write(input("введите ФИО и номер телефона: ") + "\n".upper())
 
 
 def read_data():
